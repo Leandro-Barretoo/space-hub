@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+.Table-Container {
+  display: flex;
+}
+
+.Mission-Table {
+  width: 100%;
+  margin: 10px 50px;
+}
+
+.Table-Content {
+  border: 1px solid #e8e8e8;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  padding: 10px;
+}
+
+.Mission {
+  width: 10%;
+}
+
+.Description {
+  width: 65%;
+}
+
+.Status {
+  width: 12%;
+}

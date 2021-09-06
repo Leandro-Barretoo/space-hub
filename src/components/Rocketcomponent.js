@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import PropTypes from 'prop-types';
 import Button from './Rockets_Button';
-import logo from '../Assets/rocket.jpg';
+import logo from '../assets/rocket.jpg';
 import style from './Rocketcomponent.module.css';
 
 const Rocket = (props) => {
