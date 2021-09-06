@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './Components/Navbar';
-import Line from './Components/Line';
-import Missions from './Components/Missions';
+import Navbar from './components/Navbar';
+import Line from './components/Line';
+import Missions from './components/Missions';
 
 function App() {
   return (
