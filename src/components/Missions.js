@@ -1,5 +1,18 @@
+import './Missions.css';
+import MissionCard from './MissionCard';
+
 const Missions = () => (
-  <div>This is a placeholder mission</div>
+  <div className="Table-Container">
+    <table className="Mission-Table">
+      <tr>
+        <th className="Table-Content Mission">Mission</th>
+        <th className="Table-Content Description">Description</th>
+        <th className="Table-Content Status">Status</th>
+        <th className="Table-Content Empty">&nbsp;</th>
+      </tr>
+      <MissionCard />
+    </table>
+  </div>
 );
 
 export default Missions;
