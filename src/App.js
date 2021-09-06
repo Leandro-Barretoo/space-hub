@@ -4,6 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Myprofile from './Components/Myprofile';
+import Rocket from './Components/Rockets';
 import Navbar from './Components/Navbar';
 import Line from './Components/Line';
 
@@ -15,8 +16,11 @@ function App() {
         <Line />
       </>
       <Switch>
-        <Route to="/myprofile">
+        <Route path="/myprofile">
           <Myprofile />
+        </Route>
+        <Route path="/">
+          <Rocket />
         </Route>
       </Switch>
     </Router>
