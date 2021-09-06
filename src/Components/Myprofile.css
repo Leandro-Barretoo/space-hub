@@ -1,3 +1,4 @@
 .queryresult {
   display: flex;
+  justify-content: space-around;
 }
