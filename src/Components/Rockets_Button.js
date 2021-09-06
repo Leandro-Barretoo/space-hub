@@ -1,9 +1,15 @@
+import PropTypes from 'prop-types';
+
 const Button = (props) => {
-  if (props.reserved) {
-    <button type="button">Cancel Reservation</button>;
-  } else {
-    <button type="button">Reserve</button>;
+  const reserved = props;
+  if (reserved) {
+    return <button type="button">Reserve</button>;
   }
+  return <button type="button">Cancel Reservation</button>;
 };
+
+Button.proptype = {
+  reserved: PropTypes.bool,
+}.isRequired;
 
 export default Button;
