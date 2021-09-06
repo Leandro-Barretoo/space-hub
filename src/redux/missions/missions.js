@@ -7,7 +7,7 @@ export const addMission = (payload) => ({
   payload,
 });
 
-const missionsReducer = (state= initialState, action) => {
+const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     default:
       return state;
