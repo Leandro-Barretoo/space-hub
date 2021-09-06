@@ -3,9 +3,10 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Myprofile from './Components/Myprofile';
-import Navbar from './Components/Navbar';
-import Line from './Components/Line';
+import Myprofile from './components/Myprofile';
+import Navbar from './components/Navbar';
+import Line from './components/Line';
+import Missions from './components/Missions';
 
 function App() {
   return (
@@ -15,6 +16,14 @@ function App() {
         <Line />
       </>
       <Switch>
+        <Route exact path="/">
+          <div />
+        </Route>
+        <Route path="/missions">
+          <div>
+            <Missions />
+          </div>
+        </Route>
         <Route to="/myprofile">
           <Myprofile />
         </Route>
