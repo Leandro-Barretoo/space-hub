@@ -1,3 +1,5 @@
-const Rocket = () => <h1>under construction</h1>;
+import Rocket from './Rocketcomponent';
 
-export default Rocket;
+const Rockets = () => <Rocket />;
+
+export default Rockets;

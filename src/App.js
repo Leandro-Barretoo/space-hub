@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Myprofile from './Components/Myprofile';
-import Rocket from './Components/Rockets';
+import Rockets from './Components/Rockets';
 import Navbar from './Components/Navbar';
 import Line from './Components/Line';
 
@@ -20,7 +20,7 @@ function App() {
           <Myprofile />
         </Route>
         <Route path="/">
-          <Rocket />
+          <Rockets />
         </Route>
       </Switch>
     </Router>
