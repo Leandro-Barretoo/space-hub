@@ -6,14 +6,13 @@ import {
 import Myprofile from './Components/Myprofile';
 import Rockets from './Components/Rockets';
 import Navbar from './Components/Navbar';
-import Line from './Components/Line';
+// import Line from './Components/Line';
 
 function App() {
   return (
     <Router>
       <>
         <Navbar />
-        <Line />
       </>
       <Switch>
         <Route path="/myprofile">
