@@ -35,3 +35,15 @@
   padding: 10px;
   margin-right: 20px;
 }
+
+.Link-NoActive {
+  color: #2ea8d1;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+.Link-Active {
+  color: #206fdf;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
