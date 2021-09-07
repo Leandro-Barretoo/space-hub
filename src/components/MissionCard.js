@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMission } from '../redux/missions/missions';
+import { joinMission, leaveMission } from '../redux/missions/missions';
 
 const MissionCard = (props) => {
   const { name, description, missionid } = props;
@@ -11,6 +11,13 @@ const MissionCard = (props) => {
     button.innerText = 'Leave Mission';
     button.classList.add('Joined');
     dispatch(joinMission(missionid));
+  };
+
+  const leaveMissionHandler = (e) => {
+    const button = e.target;
+    button.innerText = 'Join Mission';
+    button.classList.remove('Joined');
+    dispatch(leaveMission(missionid));
   };
 
   return (

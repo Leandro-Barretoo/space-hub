@@ -1,5 +1,6 @@
 const ADD_MISSION = 'spaceHub/missions/ADD_MISSION';
 const JOIN_MISSION = 'spaceHub/missions/JOIN_MISSION';
+const LEAVE_MISSION = 'spaceHub/missions/LEAVE_MISSION';
 
 const initialState = [];
 
@@ -13,11 +14,17 @@ export const joinMission = (payload) => ({
   payload,
 });
 
+export const leaveMission = (payload) => ({
+  type: LEAVE_MISSION,
+  payload,
+});
+
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_MISSION:
       return [...state, action.payload];
     case JOIN_MISSION:
+    case LEAVE_MISSION:
       return state.map((mission) => {
         if (mission.mission_id !== action.payload) {
           return mission;
