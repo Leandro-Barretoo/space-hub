@@ -6,7 +6,10 @@ const MissionCard = (props) => {
   const { name, description, missionid } = props;
   const dispatch = useDispatch();
 
-  const joinMissionHandler = () => {
+  const joinMissionHandler = (e) => {
+    const button = e.target;
+    button.innerText = 'Leave Mission';
+    button.classList.add('Joined');
     dispatch(joinMission(missionid));
   };
 
