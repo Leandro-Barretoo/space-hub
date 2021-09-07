@@ -11,15 +11,13 @@ export const addrocks = (payload) => ({
 const rocksReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_ROCKS:
-      const newObj = [];
       const newPayload = action.payload.map((obj) => {
         const {
           id, rocket_name: name, rocket_type: type, flickr_images: image,
         } = obj;
-        newObj.push({
+        return {
           id, name, type, image,
-        });
-        return newObj;
+        };
       });
       return [...state, ...newPayload];
     default:
