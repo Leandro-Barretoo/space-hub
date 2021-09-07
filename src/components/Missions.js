@@ -1,15 +1,30 @@
 import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import './Missions.css';
 import MissionCard from './MissionCard';
+import { addMission } from '../redux/missions/missions';
 
 const Missions = () => {
-  const getMissions = () => {
+  const dispatch = useDispatch();
+
+  const getMissions = () => (dispatch) => {
     fetch('https://api.spacexdata.com/v3/missions')
-      .then((response) => response.json());
+      .then((response) => response.json())
+      .then((data) => data.forEach((mission) => {
+        const allowed = ['mission_id', 'mission_name', 'description'];
+        const newMission = Object.keys(mission)
+          .filter((key) => allowed.includes(key))
+          .reduce((obj, key) => {
+            const temp = obj;
+            temp[key] = mission[key];
+            return temp;
+          }, {});
+        dispatch(addMission(newMission));
+      }));
   };
 
   useEffect(() => {
-    getMissions();
+    dispatch(getMissions());
   }, []);
 
   return (

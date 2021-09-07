@@ -9,6 +9,8 @@ export const addMission = (payload) => ({
 
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
+    case ADD_MISSION:
+      return [...state, action.payload];
     default:
       return state;
   }
