@@ -10,9 +10,11 @@ const Rockets = () => {
   const stat = useSelector((state) => state.rocksReducer);
   const dipsatch = useDispatch();
   const loadRockets = async () => {
-    const rocktObj = await fetchrockets();
-    if (stat.length !== rocktObj.length) dipsatch(addrocks(rocktObj));
-    setRockets(rocktObj);
+    if (!stat.length) {
+      const rocktObj = await fetchrockets();
+      dipsatch(addrocks(rocktObj));
+      setRockets(rocktObj);
+    }
   };
   useEffect(() => {
     loadRockets();
