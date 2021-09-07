@@ -6,11 +6,6 @@ const rootReducer = combineReducers({
   missionsReducer,
 });
 
-const fetchMissions = () => (dispatch) => {
-  fetch('https://api.spacexdata.com/v3/missions')
-    .then((response) => response.json());
-};
-
 const store = createStore(
   rootReducer,
   applyMiddleware(thunk),
