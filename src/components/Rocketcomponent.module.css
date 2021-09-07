@@ -1,0 +1,24 @@
+.rocketcontainer {
+  display: flex;
+  padding: 3rem;
+  width: 94%;
+}
+
+.img {
+  width: 15rem;
+  height: 11rem;
+}
+
+.descriptioncontainer {
+  margin-left: 1.4rem;
+}
+
+.descriptioncontainer h1 {
+  margin-bottom: 1rem;
+}
+
+.descriptioncontainer p {
+  margin-bottom: 2rem;
+  width: 83%;
+  line-height: 1.3rem;
+}
