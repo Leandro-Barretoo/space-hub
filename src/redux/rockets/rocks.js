@@ -13,10 +13,10 @@ const rocksReducer = (state = initialState, action) => {
     case ADD_ROCKS:
       const newPayload = action.payload.map((obj) => {
         const {
-          id, rocket_name: name, rocket_type: type, flickr_images: image,
+          id, rocket_name: name, rocket_type: type, flickr_images: image, description,
         } = obj;
         return {
-          id, name, type, image,
+          id, name, type, image, description,
         };
       });
       return [...state, ...newPayload];

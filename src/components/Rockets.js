@@ -23,7 +23,7 @@ const Rockets = () => {
       key={obj.id}
       imgsrc={obj.image[0]}
       rocketname={obj.name}
-      rocketdescription="The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 2 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth."
+      rocketdescription={obj.description}
     />
   ));
   useEffect(() => {
