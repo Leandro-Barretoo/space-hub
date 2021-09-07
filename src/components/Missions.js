@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import './Missions.css';
 import MissionCard from './MissionCard';
 import { addMission } from '../redux/missions/missions';
 
 const Missions = () => {
   const dispatch = useDispatch();
+  const missionsList = useSelector((state) => state.missionsReducer);
 
   const getMissions = () => (dispatch) => {
     fetch('https://api.spacexdata.com/v3/missions')
@@ -24,7 +25,10 @@ const Missions = () => {
   };
 
   useEffect(() => {
-    dispatch(getMissions());
+    if (!missionsList.length) {
+      dispatch(getMissions());
+      console.log(missionsList);
+    }
   }, []);
 
   return (
