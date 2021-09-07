@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import PropTypes from 'prop-types';
 import Button from './Rockets_Button';
-import logo from '../assets/rocket.jpg';
 import style from './Rocketcomponent.module.css';
 
 const Rocket = (props) => {
@@ -11,7 +10,7 @@ const Rocket = (props) => {
   return (
     <div className={style.rocketcontainer}>
       <div className={style.imgcontainer}>
-        <img src={logo} alt={imgname} className={style.img} />
+        <img src={imgsrc} alt={imgname} className={style.img} />
       </div>
       <div className={style.descriptioncontainer}>
         <h1>{rocketname}</h1>
