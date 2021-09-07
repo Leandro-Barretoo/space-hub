@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 const MissionCard = (props) => {
   const { name, description } = props;
+
   return (
     <tr>
       <td className="Table-Content Mission">{name}</td>
