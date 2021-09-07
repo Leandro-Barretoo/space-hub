@@ -27,7 +27,6 @@ const Missions = () => {
   useEffect(() => {
     if (!missionsList.length) {
       dispatch(getMissions());
-      console.log(missionsList);
     }
   }, []);
 
