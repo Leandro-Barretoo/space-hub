@@ -14,6 +14,7 @@ const Rockets = () => {
     if (stat.length !== rocktObj.length) dipsatch(addrocks(rocktObj));
     setRockets(rocktObj);
   };
+  console.log(stat);
   useEffect(() => {
     loadRockets();
   }, []);
