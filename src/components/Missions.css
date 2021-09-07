@@ -39,7 +39,9 @@
 }
 
 .Member {
-  padding: 3px 15px;
+  display: block;
+  padding: 5px;
+  margin: 0 15px;
   border-radius: 7px;
   background-color: grey;
   color: #fff;
