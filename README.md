@@ -3,9 +3,9 @@
 Space-hub shows some information on Rockets and missions from the SpaceX project.
 
 # live Demo
- -[Space Hub](https://upbeat-mclean-ce2e91.netlify.app/)
+ - [Space Hub](https://upbeat-mclean-ce2e91.netlify.app/)
  
- -[Space Hub (GitHub pages)](https://leandro-barretoo.github.io/space-hub/)
+ - [Space Hub (GitHub pages)](https://leandro-barretoo.github.io/space-hub/)
 
 # Navigation Bar
 
