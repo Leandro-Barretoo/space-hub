@@ -7,6 +7,10 @@ const Rocket = (props) => {
   const {
     imgsrc, imgname, rocketname, rocketdescription, id, reserved,
   } = props;
+  let reserveBadge = '';
+  if (reserved) {
+    reserveBadge = <span className={style.badge}>Reserved</span>;
+  }
   return (
     <div className={style.rocketcontainer}>
       <div className={style.imgcontainer}>
@@ -14,7 +18,10 @@ const Rocket = (props) => {
       </div>
       <div className={style.descriptioncontainer}>
         <h1>{rocketname}</h1>
-        <p>{rocketdescription}</p>
+        <p>
+          {reserveBadge}
+          {rocketdescription}
+        </p>
         <Button id={id} reserved={reserved} />
       </div>
     </div>
