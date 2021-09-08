@@ -36,6 +36,7 @@ const Missions = () => {
       missionid={missions.mission_id}
       name={missions.mission_name}
       description={missions.description}
+      reserved={missions.reserved}
     />
   ));
 
