@@ -12,7 +12,8 @@ const Navbar = () => (
       <ul className="Link-List">
         <li><NavLink exact to="/" activeClassName="Link-Active" className="Link-NoActive">Rockets</NavLink></li>
         <li><NavLink to="/missions" activeClassName="Link-Active" className="Link-NoActive">Missions</NavLink></li>
-        <li><NavLink to="/myprofile" activeClassName="Link-Active" className="Link-NoActive">Myprofile</NavLink></li>
+        <li><div className="Sep" /></li>
+        <li><NavLink to="/myprofile" activeClassName="Link-Active" className="Link-NoActive">My Profile</NavLink></li>
       </ul>
     </div>
   </div>
