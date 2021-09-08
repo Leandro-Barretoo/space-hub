@@ -1,7 +1,6 @@
 # Describtion
 
-- Space Hub .
-- [Link to Presentation](https://www.youtube.com/watch?v=mTNyqZWk3AA)
+Space-hub shows some information on Rockets and missions from the SpaceX project.
 
 # live Demo
  -[Space Hub](https://upbeat-mclean-ce2e91.netlify.app/)
