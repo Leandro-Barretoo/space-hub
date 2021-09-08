@@ -47,7 +47,7 @@ You can now view the development server at `localhost:3030`.
 
 # 👤 Leandro Miguel
 - GitHub: [@githubhandle](https://github.com/Leandro-Barretoo)
-- LinkedIn: [LinkedIn]()
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/leandroobarreto/)
 
 # 👤 Abdulrahman Naser
 - GitHub: [@githubhandle](https://github.com/Abdona)
@@ -57,7 +57,7 @@ You can now view the development server at `localhost:3030`.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Abdona/BookStore/issues).
+Feel free to check the [issues page](https://github.com/Leandro-Barretoo/space-hub/issues).
 
 ## Show your support
 
