@@ -1,76 +1,74 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Describtion
 
-# Project Name
+- Space Hub .
+- [Link to Presentation](https://www.youtube.com/watch?v=mTNyqZWk3AA)
 
-> One paragraph statement about the project.
+# live Demo
+ -[Space Hub](https://upbeat-mclean-ce2e91.netlify.app/)
+ 
+ -[Space Hub (GitHub pages)](https://leandro-barretoo.github.io/space-hub/)
 
-![screenshot](./app_screenshot.png)
+# Navigation Bar
 
-Additional description about the project and its features.
+| ![screenshot](./assests/spacenavbar.png)|
+| :------------: |
+
+# Rockets and Missions
+
+| ![screenshot](./assests/rocketpage.png) | ![screenshot](./assests/missions.png)
+| :------------: | :------------: |
+
+# MyProfile
+
+| ![screenshot](./assests/myprofile.png) |
+| :------------: |
+
+## Installation
+
+- Clone the repository , use  `git@github.com:Leandro-Barretoo/space-hub.git`
+- open terminal and change Directory, use `cd space-hub`
+- Install all Dependencies, use `npm install` or `npm i`
+
+## Usage
+
+### Development server
+- to run the Webapp you need to use `npm run start`
+
+You can now view the development server at `localhost:3030`.
+
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+- React.js
+- Redux
+- SpaceX API
+- redux-thunk middleware
 
 
 
-## Authors
+## Author
 
-👤 **Author1**
+# 👤 Leandro Miguel
+- GitHub: [@githubhandle](https://github.com/Leandro-Barretoo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/leandroobarreto/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+# 👤 Abdulrahman Naser
+- GitHub: [@githubhandle](https://github.com/Abdona)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulrahman-nasser-2b7173131/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Leandro-Barretoo/space-hub/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+## Inspiration
+Microverse
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.

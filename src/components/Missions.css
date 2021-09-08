@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+.Table-Container {
+  display: flex;
+}
+
+.Mission-Table {
+  width: 100%;
+  margin: 10px 50px;
+}
+
+.Table-Content {
+  border: 1px solid #e8e8e8;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  padding: 10px;
+}
+
+.Mission {
+  width: 10%;
+  font-weight: bold;
+}
+
+.Description {
+  width: 65%;
+}
+
+.Status {
+  width: 12%;
+}
+
+.Desc-Info {
+  padding: 20px;
+}
+
+.Btn {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.Member {
+  display: block;
+  padding: 5px;
+  margin: 0 15px;
+  border-radius: 7px;
+  background-color: grey;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.Act-Mem {
+  background-color: #2ea8d1;
+}
+
+.Join {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.Joined {
+  border: 1px solid red;
+  color: red;
+}
