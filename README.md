@@ -69,8 +69,4 @@ Microverse
 
 ## 📝 License
 
-<<<<<<< HEAD
-This project is [MIT]() licensed.
-=======
 This project is [MIT](./LICENSE) licensed.
->>>>>>> e83c7d9843b8d6c840b4fc92a8d23696137fd22f
