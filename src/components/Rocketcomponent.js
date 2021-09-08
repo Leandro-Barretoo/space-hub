@@ -5,7 +5,7 @@ import style from './Rocketcomponent.module.css';
 
 const Rocket = (props) => {
   const {
-    imgsrc, imgname, rocketname, rocketdescription,
+    imgsrc, imgname, rocketname, rocketdescription, id, reserved,
   } = props;
   return (
     <div className={style.rocketcontainer}>
@@ -15,7 +15,7 @@ const Rocket = (props) => {
       <div className={style.descriptioncontainer}>
         <h1>{rocketname}</h1>
         <p>{rocketdescription}</p>
-        <Button reserved={false} />
+        <Button id={id} reserved={reserved} />
       </div>
     </div>
   );
