@@ -17,7 +17,7 @@ function App() {
         <Line />
       </>
       <Switch>
-        <Route path="/missions">
+        <Route path={process.env.PUBLIC_URL + '/missions'}>
           <Missions />
         </Route>
         <Route path="/myprofile">
