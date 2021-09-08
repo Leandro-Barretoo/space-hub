@@ -21,7 +21,12 @@ const MissionCard = (props) => {
       <td className="Table-Content Mission">{name}</td>
       <td className="Table-Content Description Desc-Info">{description}</td>
       <td className="Table-Content Status Btn">
-        <span className="Member">NOT A MEMBER</span>
+        {reserved && (
+          <span className="Member Act-Mem">Active Member</span>
+        )}
+        {!reserved && (
+          <span className="Member">NOT A MEMBER</span>
+        )}
       </td>
       <td className="Table-Content Empty Btn">
         {reserved && (
