@@ -1,6 +1,7 @@
 /* eslint-disable no-case-declarations */
 const ADD_ROCKS = 'Space-Hub/rockets/ADD_ROCKS';
 const RESERVE_ROCKET = 'Space-Hub/rockets/RESERVE_ROCKET';
+const CANCEL_ROCKET = 'Space-Hub/rockets/CANCEL_ROCKET';
 
 const initialState = [];
 
@@ -12,6 +13,13 @@ export const addrocks = (payload) => ({
 export const reserverocket = (payload) => (
   {
     type: RESERVE_ROCKET,
+    payload,
+  }
+);
+
+export const cancelerocket = (payload) => (
+  {
+    type: CANCEL_ROCKET,
     payload,
   }
 );
