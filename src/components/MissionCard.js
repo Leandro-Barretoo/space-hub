@@ -1,17 +1,20 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMission } from '../redux/missions/missions';
+import { joinMission, leaveMission } from '../redux/missions/missions';
 
 const MissionCard = (props) => {
-  const { name, description, missionid } = props;
+  const {
+    name,
+    description,
+    missionid,
+    reserved,
+  } = props;
+
   const dispatch = useDispatch();
 
-  const joinMissionHandler = (e) => {
-    const button = e.target;
-    button.innerText = 'Leave Mission';
-    button.classList.add('Joined');
-    dispatch(joinMission(missionid));
-  };
+  const joinMissionHandler = () => { dispatch(joinMission(missionid)); };
+
+  const leaveMissionHandler = () => { dispatch(leaveMission(missionid)); };
 
   return (
     <tr>
@@ -21,13 +24,24 @@ const MissionCard = (props) => {
         <span className="Member">NOT A MEMBER</span>
       </td>
       <td className="Table-Content Empty Btn">
-        <button
-          type="submit"
-          className="Join"
-          onClick={joinMissionHandler}
-        >
-          Join Mission
-        </button>
+        {reserved && (
+          <button
+            type="submit"
+            className="Join Joined"
+            onClick={leaveMissionHandler}
+          >
+            Leave Mission
+          </button>
+        )}
+        {!reserved && (
+          <button
+            type="submit"
+            className="Join"
+            onClick={joinMissionHandler}
+          >
+            Join Mission
+          </button>
+        )}
       </td>
     </tr>
   );
@@ -37,12 +51,14 @@ MissionCard.defaultProps = {
   name: '',
   description: '',
   missionid: '',
+  reserved: false,
 };
 
 MissionCard.propTypes = {
   name: PropTypes.string,
   description: PropTypes.string,
   missionid: PropTypes.string,
+  reserved: PropTypes.bool,
 };
 
 export default MissionCard;
