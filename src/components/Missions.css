@@ -58,3 +58,8 @@
   border: 1px solid grey;
   border-radius: 4px;
 }
+
+.Joined {
+  border: 1px solid red;
+  color: red;
+}
