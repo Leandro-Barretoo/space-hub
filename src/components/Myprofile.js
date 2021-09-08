@@ -2,12 +2,12 @@ import './Myprofile.css';
 
 const Myprofile = () => (
   <div className="queryresult">
-    {/* Selected Missions */}
-    under construction Rockets
-    <div />
-    {/* Selected Rockets */}
-    <div />
-    under construction Mission
+    <div className="Box">
+      <h2 className="Cat-Title">My Missions</h2>
+    </div>
+    <div className="Box">
+      <h2 className="Cat-Title">My Rockets</h2>
+    </div>
   </div>
 );
 export default Myprofile;

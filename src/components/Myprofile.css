@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 .queryresult {
   display: flex;
-  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.Box {
+  flex: 1;
+  border: 1px solid black;
+  margin: 2rem;
+}
+
+.Cat-Title {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
