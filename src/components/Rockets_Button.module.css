@@ -1,6 +1,14 @@
 .buttRes {
   border-radius: 5%;
   padding: 0.5666rem;
+  border: 1px solid gray;
+  background-color: #fff;
+  color: gray;
+}
+
+.buttNotRes {
+  border-radius: 5%;
+  padding: 0.5666rem;
   border: 1px solid #0879fa;
   background-color: #0879fa;
   color: #fff;

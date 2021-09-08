@@ -17,9 +17,11 @@ const Rockets = () => {
   const rocketList = stat.map((obj) => (
     <Rocket
       key={obj.id}
+      id={obj.id}
       imgsrc={obj.image[0]}
       rocketname={obj.name}
       rocketdescription={obj.description}
+      reserved={obj.reserved}
     />
   ));
   useEffect(() => {
