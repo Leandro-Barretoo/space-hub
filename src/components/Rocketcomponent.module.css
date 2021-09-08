@@ -22,3 +22,11 @@
   width: 83%;
   line-height: 1.3rem;
 }
+
+.badge {
+  background-color: #31a2b8;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 0.58rem;
+  padding: 1px 2.9px 1px 2.9px;
+}
