@@ -43,6 +43,13 @@ const rocksReducer = (state = initialState, action) => {
         }
         return { ...obj };
       });
+    case CANCEL_ROCKET:
+      return state.map((obj) => {
+        if (obj.id === parseInt(action.payload, 10)) {
+          return { ...obj, reserved: false };
+        }
+        return { ...obj };
+      });
     default:
       return state;
   }
