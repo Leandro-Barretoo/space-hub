@@ -4,6 +4,7 @@ Space Hub .
 
 # live Demo
  [Space Hub]()
+ [Space Hub (GitHub pages)](https://leandro-barretoo.github.io/space-hub/);
 
 # Navigation Bar
 
@@ -22,7 +23,7 @@ Space Hub .
 
 ## Installation
 
-- Clone the repository , use  `git@github.com:Leandro-Barretoo/space-hub.git` 
+- Clone the repository , use  `git@github.com:Leandro-Barretoo/space-hub.git`
 - open terminal and change Directory, use `cd space-hub`
 - Install all Dependencies, use `npm install` or `npm i`
 
